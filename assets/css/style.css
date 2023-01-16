@@ -40,7 +40,7 @@ h2 {
   -webkit-text-fill-color: transparent;
 }
 
-/* Adicione uma classe para o body quando o tema dark estiver ativo */
+/* Add class when dark mode is on*/
 body.dark-mode {
   background-color: var(--dark-color);
   color: var(--light-color);
