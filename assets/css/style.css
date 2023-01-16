@@ -3,6 +3,21 @@
 :root {
   --light-color: #ffffff;
   --dark-color: #282c34;
+  --summer-color: linear-gradient(
+    360deg,
+    hsla(31, 96%, 56%, 1) 15%,
+    hsla(178, 64%, 64%, 1) 75%
+  );
+  --sun-color: radial-gradient(
+    circle,
+    hsla(52, 82%, 52%, 1) 25%,
+    hsla(1, 92%, 47%, 1) 100%
+  );
+  --moon-color: radial-gradient(
+    circle,
+    hsla(0, 0%, 100%, 1) 55%,
+    hsla(184, 84%, 15%, 1) 100%
+  );
 }
 
 * {
@@ -18,6 +33,11 @@ body {
 
 h2 {
   font-size: 3em;
+  background: var(--summer-color);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 /* Adicione uma classe para o body quando o tema dark estiver ativo */
@@ -26,6 +46,14 @@ body.dark-mode {
   color: var(--light-color);
   height: 100vh;
   margin: 0;
+}
+
+h2.dark-mode {
+  background: var(--light-color);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .container {
@@ -100,10 +128,20 @@ input:checked + .slider:before {
 .fas.fa-sun {
   font-size: 225px;
   margin-top: 45px;
+  background: var(--sun-color);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .fa-moon {
   font-size: 225px;
   margin-top: 45px;
   margin-left: 25px;
+  background: var(--moon-color);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
