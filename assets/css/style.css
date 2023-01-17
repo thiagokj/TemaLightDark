@@ -33,11 +33,7 @@ body {
 
 h2 {
   font-size: 3em;
-  background: var(--summer-color);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: #424242;
 }
 
 /* Add class when dark mode is on*/
